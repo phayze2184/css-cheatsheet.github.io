@@ -1,0 +1,48 @@
+body {
+    margin: 10px auto;
+    font-family: "Lucida Console", Courier, monospace;
+    text-align: center;
+    background-color: lemonchiffon;
+    display: block;
+}
+
+table {
+    margin: 10px auto;
+    border: 2px solid darkcyan;
+    border-collapse: collapse;
+    width: 800px;
+    letter-spacing: 1.5;
+}
+
+td, th {
+    padding: 15px;
+    border-bottom: 1px solid darkcyan;
+    color: black;
+    text-align: left;
+    font-weight: 900px;
+}
+
+th {
+    background-color: darkcyan;
+    color: white;
+   }  
+
+tr:hover {
+    background-color: ivory;
+}   
+
+.special_row {
+    background-color: darkcyan;
+    color: white;
+    font-family: "Source Code Pro", Courier, monospace;
+    font-style: italic;
+    padding: 3px;
+}
+
+h1 {
+    color: darkcyan;
+
+h2 {
+    color: rgba(0, 0, 0, 0.2);
+}
+
