@@ -6,6 +6,26 @@ body {
     display: block;
 }
 
+nav {
+    display: inline-block;
+    padding: 10px, auto;
+    font-weight: 900;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkcyan;
+    padding: 10px;
+    font-size: 15px;
+    font-style: bold;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 table {
     margin: 10px auto;
     border: 2px solid darkcyan;
