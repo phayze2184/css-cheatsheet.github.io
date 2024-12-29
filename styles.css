@@ -30,7 +30,7 @@ table {
     margin: 10px auto;
     border: 2px solid darkcyan;
     border-collapse: collapse;
-    width: 800px;
+    width: 1200px;
     letter-spacing: 1.5;
 }
 
@@ -50,6 +50,10 @@ th {
 tr:hover {
     background-color: ivory;
 }   
+
+table td:first-child {
+    width: 150px; 
+  }
 
 .special_row {
     background-color: darkcyan;
