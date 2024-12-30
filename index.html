@@ -16,6 +16,8 @@
             <ul>
                 <li><a href="#text-properties">Text Properties</a></li>
                 <li><a href="#box-model-properties">Box Model Properties</a></li>
+                <li><a href="#links">Links and Buttons</a></li>
+                <li><a href="#skeuomorphism-flat">Skeuomorphism and Flat Design</a></li>
             </ul>
     </header>
     <body>
@@ -157,7 +159,7 @@
                     <td><span class="special_row">content-box, border-box</span></td>
                 </tr>
                 </table>
-        <h2>Links and Buttons</h2>
+        <h2 id="links">Links and Buttons</h2>
             <table>
                 <thead>
                     <td>Ruleset</td>
@@ -200,7 +202,7 @@
                     <td>Changes the cursor to a pointer when hovering over the link</td>
                 </tr>
             </table>   
-        <h2>Skeuomorphism and Flat Design</h2>
+        <h2 id="skeuomorphism-flat">Skeuomorphism and Flat Design</h2>
         <table>
             <thead>
                 <td>Type of button</td>
@@ -286,13 +288,36 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td class="special_row">Flat active</td>
+                    <td class="special_row">3D button</td>
                     <td>
-                        .flat:active {<br>
-                            border-color: #fff;<br>
+                        button {<br>
+                            padding: 5px;<br>
+                            border: 1px solid black;<br>
+                            border-radius: 5px;<br>
+                            text-decoration: none;<br>
+                            box-shadow: 0px 5px;<br>
                           }
                     </td>
-                    <td></td>
+                    <td>original state</td>
+                </tr>
+                <tr>
+                    <td class="special_row">3D button hover</td>
+                    <td>
+                        button:hover {<br>
+                            cursor: pointer;<br>
+                          }
+                    <td>state when cursor over</td>
+                </tr>
+                <tr>
+                    <td class="special_row">3D button active</td>
+                    <td>
+                        button:active {<br>
+                            margin-top: 5px;<br>
+                            color: black;<br>
+                            box-shadow: 0px 0px;<br>
+                          }
+                    </td>
+                    <td>state when button clicked</td>
                 </tr>
         </table>    
     </body>
