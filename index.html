@@ -35,7 +35,7 @@
                 <tr>
                     <td><span class="special_row">font-family</span></td>
                     <td>Specifies the font of text.</td>
-                    <td><span class="special_row">Open Sans, Arial, sans-serif</span></td>
+                    <td><span class="special_row">"Open Sans", Arial, sans-serif</span></td>
                 </tr>
                 <tr>
                     <td><span class="special_row">font-size</span></td>
@@ -157,6 +157,144 @@
                     <td><span class="special_row">content-box, border-box</span></td>
                 </tr>
                 </table>
+        <h2>Links and Buttons</h2>
+            <table>
+                <thead>
+                    <td>Ruleset</td>
+                    <td>Explanation</td>
+                </thead>
+                <tr>
+                    <td class="special_row">a {<br>
+                        color: blue;<br>
+                    }</td>
+                    <td>Sets the color of the link blue</td>
+                </tr>
+                <tr>
+                    <td class="special_row">a:link {<br>
+                        color: black;<br>
+                    }</td>
+                    <td>Sets the color of the unvisited link to black</td>
+                </tr>
+                <tr>
+                    <td class="special_row">a:visited {<br>
+                        color: gray;<br>
+                    }</td>
+                    <td>Sets the color of the link to gray after the link has been visited.</td>
+                </tr>
+                <tr>
+                    <td class="special_row">a:hover {<br>
+                        color: orange;<br>
+                    }</td>
+                    <td>Sets the color of the link to orange when the cursor is over the text.</td>
+                </tr>
+                <tr>
+                    <td class="special_row">a:active {<br>
+                        color: orange;<br>
+                    }</td>
+                    <td>The color will turn orange when the user click the link and holds down the cursor</td>
+                </tr>
+                <tr>
+                    <td class="special_row">a {<br>
+                        cursor: pointer;<br>
+                      }</td>
+                    <td>Changes the cursor to a pointer when hovering over the link</td>
+                </tr>
+            </table>   
+        <h2>Skeuomorphism and Flat Design</h2>
+        <table>
+            <thead>
+                <td>Type of button</td>
+                <td>Ruleset</td>
+                <td>Appearence</td>
+            </thead>
+            <tr>
+                <td class="special_row">Default button</td>
+                <td>
+                    button {<br>
+                        height: 50px;<br>
+                        width: 200px;<br>
+                        cursor: pointer;<br>
+                        font-weight: 600;<br>
+                        font-size: 15px;<br>
+                      }
+                </td>
+                <td>
+                    <button>Default button</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="special_row">Skeuomorphism</td>
+                <td>
+                    .skeuomorphic {<br>
+                        border: 2px solid #0c960c;<br>
+                        border-radius: 5px;<br>
+                        color: #F8F8F8;<br>
+                        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2), 0px -2px 2px rgba(255, 255, 255, 0.5) inset, 0 2px 2px rgba(255, 255, 255, 0.8) inset;<br>
+                        background: linear-gradient(#1D1, #0ebc0e);<br>
+                        text-shadow: 0 -2px #0c960c;<br>
+                    }
+                </td>
+                <td>
+                    <img src="/skeumorphic_button.png" alt="Skeuomorphic button" height="50px"></img>
+                </td>
+            </tr>
+            <tr>
+                <td class="special_row">Skeuomorphic hover</td>
+                <td>
+                    .skeuomorphic:hover {<br>
+                        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1), 0px -2px 2px rgba(255, 255, 255, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.4) inset;<br>
+                        background: #0ebc0e;<br>
+                        background: linear-gradient(#0ebc0e, #0c960c);<br>
+                        border-color: #064f06;<br>
+                      }
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="special_row">Skeuomorphic active</td>
+                <td>
+                    skeuomorphic:active {<br>
+                        margin-top: 2px;<br>
+                        margin-bottom: -2px;<br>
+                        box-shadow: 0px 2px 2px rgba(63, 63, 63, 0.1), 0px -2px 2px rgba(255, 255, 255, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.4) inset;<br>
+                        background: #0c960c;<br>
+                        background: linear-gradient(#0c960c, #0ebc0e);<br>
+                      }
+                </td>
+                <td></td>
+            </tr>
+                <tr>
+                    <td class="special_row">Flat button</td>
+                    <td>.flat {<br>
+                        background-color: #1D1;<br>
+                        color: #fff;<br>
+                        border: 2px solid #12dd23;<br>
+                        border-radius: 10px;<br>
+                      }
+                    <td>
+                        <img src="/flat.png" alt="Flat button" height="50px"></img>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="special_row">Flat hover</td>
+                    <td>
+                        .flat:hover {<br>
+                        background-color: #0c960c;<br>
+                        transition: background-color .15s, font-size .15s;<br>
+                        font-size: 18px;<br>
+                        }
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="special_row">Flat active</td>
+                    <td>
+                        .flat:active {<br>
+                            border-color: #fff;<br>
+                          }
+                    </td>
+                    <td></td>
+                </tr>
+        </table>    
     </body>
 </body>
 </html>

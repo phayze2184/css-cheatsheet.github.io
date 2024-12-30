@@ -13,6 +13,7 @@ nav {
 }
 
 nav a {
+    display:inline-block;
     text-decoration: none;
     color: darkcyan;
     padding: 10px;
